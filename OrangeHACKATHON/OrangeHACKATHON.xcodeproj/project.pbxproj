@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8B52F9E62AB20B0C009F34E8 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F9E52AB20B0C009F34E8 /* SignIn.swift */; };
+		8B8EECC12AB4602400868312 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8B8EECC02AB4602400868312 /* FirebaseAnalytics */; };
+		8B8EECC32AB4602400868312 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 8B8EECC22AB4602400868312 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		8BE954D92AB1B82000E06736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE954D82AB1B82000E06736 /* AppDelegate.swift */; };
 		8BE954DB2AB1B82000E06736 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE954DA2AB1B82000E06736 /* SceneDelegate.swift */; };
 		8BE954DD2AB1B82000E06736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE954DC2AB1B82000E06736 /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8EECC12AB4602400868312 /* FirebaseAnalytics in Frameworks */,
+				8B8EECC32AB4602400868312 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				8BE954EE2AB1C69700E06736 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +94,8 @@
 			name = OrangeHACKATHON;
 			packageProductDependencies = (
 				8BE954ED2AB1C69700E06736 /* SnapKit */,
+				8B8EECC02AB4602400868312 /* FirebaseAnalytics */,
+				8B8EECC22AB4602400868312 /* FirebaseAnalyticsWithoutAdIdSupport */,
 			);
 			productName = OrangeHACKATHON;
 			productReference = 8BE954D52AB1B82000E06736 /* OrangeHACKATHON.app */;
@@ -121,6 +127,7 @@
 			mainGroup = 8BE954CC2AB1B82000E06736;
 			packageReferences = (
 				8BE954EC2AB1C69700E06736 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8B8EECBF2AB4602400868312 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 8BE954D62AB1B82000E06736 /* Products */;
 			projectDirPath = "";
@@ -364,6 +371,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8B8EECBF2AB4602400868312 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 		8BE954EC2AB1C69700E06736 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -375,6 +390,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8B8EECC02AB4602400868312 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B8EECBF2AB4602400868312 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8B8EECC22AB4602400868312 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B8EECBF2AB4602400868312 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
 		8BE954ED2AB1C69700E06736 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8BE954EC2AB1C69700E06736 /* XCRemoteSwiftPackageReference "SnapKit" */;
