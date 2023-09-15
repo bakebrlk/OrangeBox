@@ -33,6 +33,9 @@ class ViewController: UIViewController {
         selfView.addSubview(signUpBTN)
         selfView.addSubview(signInBTN)
         
+        signInBTN.addTarget(self, action: #selector(openSignIn), for: .touchUpInside)
+        signUpBTN.addTarget(self, action: #selector(openSignUp), for: .touchUpInside)
+        
         signInBTN.snp.makeConstraints { make in
             make.bottom.equalToSuperview().offset(-34)
             make.leading.equalToSuperview().offset(16)
@@ -79,6 +82,14 @@ class ViewController: UIViewController {
             make.trailing.equalToSuperview()
             make.width.height.equalTo(150)
         }
+    }
+    
+    @objc func openSignIn(){
+        navigationController?.pushViewController(SignIn(), animated: true)
+    }
+    
+    @objc func openSignUp(){
+        navigationController?.pushViewController(SignUp(), animated: true)
     }
     
     private let logo3: UIImageView = {
