@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import FirebaseAuth
 
 class SignIn: UIViewController {
     override func viewDidLoad() {
@@ -63,6 +64,25 @@ class SignIn: UIViewController {
             make.height.equalTo(50)
         }
         
+        btnSignIn.addTarget(self, action: #selector(checkSignIn), for: .touchUpInside)
+        
+    }
+    
+    @objc func checkSignIn(){
+        guard let email = email.text, !email.isEmpty,
+              let password = password.text, !password.isEmpty else{
+            return
+        }
+        
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password,completion:{ result, error in
+            guard error == nil else{
+                
+                self.present(ErrorForReg(), animated: true)
+                return
+            }
+            
+            self.navigationController?.pushViewController(MainView(), animated: true)
+        })
     }
     
     @objc func pushSingUp(){

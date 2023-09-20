@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import FirebaseAuth
 
 class SignUp: UIViewController {
     
@@ -54,7 +55,7 @@ class SignUp: UIViewController {
         }
         
         view.addSubview(logIn)
-        logIn.addTarget(self, action: #selector(pushSignUp), for: .touchUpInside)
+        logIn.addTarget(self, action: #selector(pushSignIn), for: .touchUpInside)
         logIn.snp.makeConstraints { make in
             make.top.equalTo(confirmPassword.snp.bottom).offset(10)
             make.trailing.equalToSuperview().offset(-20)
@@ -73,9 +74,32 @@ class SignUp: UIViewController {
             make.trailing.equalToSuperview().offset(-16)
             make.height.equalTo(50)
         }
+        
+        btn.addTarget(self, action: #selector(signUp), for: .touchUpInside)
     }
     
-    @objc func pushSignUp(){
+    @objc func signUp(){
+        guard let email = email.text, !email.isEmpty,
+              let password = password.text, !password.isEmpty,
+              let confPassword = confirmPassword.text, !confPassword.isEmpty,
+              password == confPassword
+        else{
+            return
+        }
+        
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {result, error in
+            guard error == nil else{
+                // Error creation
+                
+                print("Error creation")
+                return
+            }
+            
+            print("Acc creation")
+        })
+    }
+    
+    @objc func pushSignIn(){
         navigationController?.pushViewController(SignIn(), animated: true)
     }
     
