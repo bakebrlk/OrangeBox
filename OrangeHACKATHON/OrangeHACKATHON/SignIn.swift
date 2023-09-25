@@ -9,15 +9,22 @@ import UIKit
 import SnapKit
 import FirebaseAuth
 
-class SignIn: UIViewController {
+
+class SignIn: UIViewController, btnDelegate{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
     }
     
+    func openSignUp() {
+        logUp.sendActions(for: .touchUpInside)
+    }
+    
     private func setUI(){
         view.backgroundColor = UIColor(named: "green")
         navigationItem.title = "Welcome to Back!"
+        
         self.navigationItem.setHidesBackButton(true, animated: true)
         
         view.addSubview(email)
@@ -77,12 +84,23 @@ class SignIn: UIViewController {
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password,completion:{ result, error in
             guard error == nil else{
                 
-                self.present(ErrorForReg(), animated: true)
+                self.presentError()
                 return
             }
             
             self.navigationController?.pushViewController(MainView(), animated: true)
         })
+    }
+    
+    private func presentError(){
+        let error = ErrorForReg()
+        
+        error.delegate = self
+        error.modalPresentationStyle = .pageSheet
+        error.sheetPresentationController?.detents = [.medium()]
+        error.sheetPresentationController?.prefersGrabberVisible = true
+        
+        present(error, animated: true)
     }
     
     @objc func pushSingUp(){

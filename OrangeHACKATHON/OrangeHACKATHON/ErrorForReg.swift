@@ -8,20 +8,17 @@
 import UIKit
 import SnapKit
 
-class ErrorForReg: UIViewController, UISheetPresentationControllerDelegate{
+protocol btnDelegate{
+    func openSignUp()
+}
+
+class ErrorForReg: UIViewController{
     
-    override var sheetPresentationController: UISheetPresentationController{
-        presentationController as! UISheetPresentationController
-    }
+    var delegate: btnDelegate?
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        sheetPresentationController.delegate = self
-        sheetPresentationController.selectedDetentIdentifier = .medium
-        sheetPresentationController.prefersGrabberVisible = true
-        sheetPresentationController.detents = [.medium()]
-        
         setUI()
     }
     
@@ -45,7 +42,7 @@ class ErrorForReg: UIViewController, UISheetPresentationControllerDelegate{
         }
         
         view.addSubview(btn)
-        btn.addTarget(self, action: #selector(pushSignUp), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(openSignUp), for: .touchUpInside)
         btn.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().offset(-16)
@@ -54,14 +51,12 @@ class ErrorForReg: UIViewController, UISheetPresentationControllerDelegate{
         }
         
     }
+   
     
-    @objc func pushSignUp(){
-       
-        dismiss(animated: true)
-    }
-    
-    private func openSignUp(){
-        navigationController?.pushViewController(SignUp(), animated: true)
+    @objc func openSignUp(){
+        dismiss(animated: true){
+            self.delegate?.openSignUp()
+        }
     }
     
     private let btn: UIButton = {

@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: SignIn())
+        window?.rootViewController = UINavigationController(rootViewController: ViewController())
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
