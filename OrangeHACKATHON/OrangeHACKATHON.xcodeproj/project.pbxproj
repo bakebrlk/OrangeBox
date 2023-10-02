@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B52F9E62AB20B0C009F34E8 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F9E52AB20B0C009F34E8 /* SignIn.swift */; };
+		8B7DA1D72ACB636100D62E3C /* ErrorForCreateAcc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DA1D62ACB636100D62E3C /* ErrorForCreateAcc.swift */; };
 		8B881D362AB46FFB00515ECD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D352AB46FFB00515ECD /* FirebaseAnalytics */; };
 		8B881D382AB46FFB00515ECD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D372AB46FFB00515ECD /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		8B881D3A2AB46FFB00515ECD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D392AB46FFB00515ECD /* FirebaseAuth */; };
@@ -25,10 +26,11 @@
 
 /* Begin PBXFileReference section */
 		8B52F9E52AB20B0C009F34E8 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		8B7DA1D62ACB636100D62E3C /* ErrorForCreateAcc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorForCreateAcc.swift; sourceTree = "<group>"; };
 		8B881D3B2AB471C400515ECD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8BC9C6262ABA2D3200774B82 /* ErrorForReg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorForReg.swift; sourceTree = "<group>"; };
-		8BE954D52AB1B82000E06736 /* OrangeHACKATHON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeHACKATHON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE954D52AB1B82000E06736 /* Culinary Oasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Culinary Oasis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE954D82AB1B82000E06736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BE954DA2AB1B82000E06736 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8BE954DC2AB1B82000E06736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
@@ -64,7 +66,7 @@
 		8BE954D62AB1B82000E06736 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BE954D52AB1B82000E06736 /* OrangeHACKATHON.app */,
+				8BE954D52AB1B82000E06736 /* Culinary Oasis.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +81,7 @@
 				8B52F9E52AB20B0C009F34E8 /* SignIn.swift */,
 				8B881D3B2AB471C400515ECD /* MainView.swift */,
 				8BC9C6262ABA2D3200774B82 /* ErrorForReg.swift */,
+				8B7DA1D62ACB636100D62E3C /* ErrorForCreateAcc.swift */,
 				8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */,
 				8BE954E12AB1B82100E06736 /* Assets.xcassets */,
 				8BE954E32AB1B82100E06736 /* LaunchScreen.storyboard */,
@@ -90,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BE954D42AB1B82000E06736 /* OrangeHACKATHON */ = {
+		8BE954D42AB1B82000E06736 /* Culinary Oasis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BE954E92AB1B82100E06736 /* Build configuration list for PBXNativeTarget "OrangeHACKATHON" */;
+			buildConfigurationList = 8BE954E92AB1B82100E06736 /* Build configuration list for PBXNativeTarget "Culinary Oasis" */;
 			buildPhases = (
 				8BE954D12AB1B82000E06736 /* Sources */,
 				8BE954D22AB1B82000E06736 /* Frameworks */,
@@ -102,7 +105,7 @@
 			);
 			dependencies = (
 			);
-			name = OrangeHACKATHON;
+			name = "Culinary Oasis";
 			packageProductDependencies = (
 				8BE954ED2AB1C69700E06736 /* SnapKit */,
 				8B881D352AB46FFB00515ECD /* FirebaseAnalytics */,
@@ -110,7 +113,7 @@
 				8B881D392AB46FFB00515ECD /* FirebaseAuth */,
 			);
 			productName = OrangeHACKATHON;
-			productReference = 8BE954D52AB1B82000E06736 /* OrangeHACKATHON.app */;
+			productReference = 8BE954D52AB1B82000E06736 /* Culinary Oasis.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +124,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					8BE954D42AB1B82000E06736 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -145,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BE954D42AB1B82000E06736 /* OrangeHACKATHON */,
+				8BE954D42AB1B82000E06736 /* Culinary Oasis */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +177,7 @@
 				8B52F9E62AB20B0C009F34E8 /* SignIn.swift in Sources */,
 				8BE954D92AB1B82000E06736 /* AppDelegate.swift in Sources */,
 				8BC9C6272ABA2D3200774B82 /* ErrorForReg.swift in Sources */,
+				8B7DA1D72ACB636100D62E3C /* ErrorForCreateAcc.swift in Sources */,
 				8BE954DB2AB1B82000E06736 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +232,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -288,6 +293,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -316,6 +322,8 @@
 				DEVELOPMENT_TEAM = U5PQY3V94J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OrangeHACKATHON/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Culinary Oasis";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -344,6 +352,8 @@
 				DEVELOPMENT_TEAM = U5PQY3V94J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OrangeHACKATHON/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Culinary Oasis";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -374,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BE954E92AB1B82100E06736 /* Build configuration list for PBXNativeTarget "OrangeHACKATHON" */ = {
+		8BE954E92AB1B82100E06736 /* Build configuration list for PBXNativeTarget "Culinary Oasis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BE954EA2AB1B82100E06736 /* Debug */,

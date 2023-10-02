@@ -11,6 +11,8 @@ import FirebaseAuth
 
 class SignUp: UIViewController {
     
+    private var ntf = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
@@ -76,6 +78,7 @@ class SignUp: UIViewController {
         }
         
         btn.addTarget(self, action: #selector(signUp), for: .touchUpInside)
+        
     }
     
     @objc func signUp(){
@@ -84,19 +87,111 @@ class SignUp: UIViewController {
               let confPassword = confirmPassword.text, !confPassword.isEmpty,
               password == confPassword
         else{
+            guard let email = email.text, !email.isEmpty,
+                  let password = password.text, !password.isEmpty,
+                  let confPassword = confirmPassword.text, !confPassword.isEmpty,
+                  password != confPassword
+            else{
+                return
+            }
+            
+            errorDoesntMatchesPassword()
             return
         }
         
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {result, error in
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [self]result, error in
             guard error == nil else{
-                // Error creation
                 
-                print("Error creation")
+                if(!email.contains("@")){
+                    self.errorEmailDoesntComplyPrinciples()
+                }else if(!isPasswordValid(password)){
+                    self.errorPasswordDoesntComplyPrinciples()
+                }
+                
                 return
             }
             
             print("Acc creation")
         })
+    }
+    
+    private func isPasswordValid(_ password: String) -> Bool {
+        var containsCapitalLetter = false
+        var containsSmallLetter = false
+        var containsNumber = false
+        
+        for character in password {
+            if character.isUppercase {
+                containsCapitalLetter = true
+            } else if character.isLowercase {
+                containsSmallLetter = true
+            } else if character.isNumber {
+                containsNumber = true
+            }
+            
+        }
+
+        return containsCapitalLetter && containsSmallLetter && containsNumber
+    }
+    
+    
+    private func errorEmailDoesntComplyPrinciples(){
+        ntf = pushNotification("The email must contains \"@\"")
+    }
+
+    private func errorDoesntMatchesPassword(){
+        ntf = pushNotification("doesn't matches password")
+    }
+    
+    private func errorPasswordDoesntComplyPrinciples(){
+        ntf = pushNotification("The password must contain \"capital letters, small letters, numbers\"")
+    }
+    
+    private func pushNotification(_ text: String) -> UIView{
+        ntf = UIView()
+        
+        ntf.layer.cornerRadius = 16
+        ntf.backgroundColor = .lightText
+
+        view.addSubview(ntf)
+                
+        ntf.snp.makeConstraints { make in
+            make.bottom.equalToSuperview().offset(-150)
+            make.centerX.equalToSuperview()
+            make.leading.equalToSuperview().offset(16)
+            make.trailing.equalToSuperview().offset(-16)
+        }
+        
+        let label = UILabel()
+        label.text = text
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 20)
+        label.textColor = .red
+        
+        ntf.addSubview(label)
+        
+        label.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        
+        ntf.snp.makeConstraints { make in
+            make.width.equalTo(label.snp.width).offset(40)
+            make.height.equalTo(label.snp.height).offset(20)
+        }
+        
+        UIView.animate(withDuration: 2, animations: {
+            self.ntf.alpha = 1.0
+            self.ntf.center.y = CGFloat(-150)
+        }){(_) in
+            UIView.animate(withDuration: 5, animations: {
+                self.ntf.alpha = 0.0
+            }) { (_) in
+                self.ntf.isHidden = true
+            }
+        }
+        
+        return ntf
     }
     
     @objc func pushSignIn(){

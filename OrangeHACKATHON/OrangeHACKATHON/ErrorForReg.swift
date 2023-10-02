@@ -47,7 +47,7 @@ class ErrorForReg: UIViewController{
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().offset(-16)
             make.bottom.equalToSuperview().offset(-40)
-            make.height.equalTo(40)
+            make.height.equalTo(50)
         }
         
     }
