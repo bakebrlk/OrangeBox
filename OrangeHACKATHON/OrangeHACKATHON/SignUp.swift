@@ -137,18 +137,21 @@ class SignUp: UIViewController {
     
     private lazy var email: UITextField = {
         let tx = textField(text: "Email")
+        tx.layer.cornerRadius = 16
         return tx
     }()
     
     private lazy var password: UITextField = {
         let tx = textField(text: "Password")
         tx.isSecureTextEntry = true
+        tx.layer.cornerRadius = 16
         return tx
     }()
     
     private lazy var confirmPassword: UITextField = {
         let tx = textField(text: "Confirm Password")
         tx.isSecureTextEntry = true
+        tx.layer.cornerRadius = 16
         return tx
     }()
     
