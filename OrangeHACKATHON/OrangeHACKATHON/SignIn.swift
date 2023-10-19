@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 import FirebaseAuth
-
+import SwiftUI
 
 class SignIn: UIViewController, btnDelegate{
     
@@ -93,7 +93,8 @@ class SignIn: UIViewController, btnDelegate{
             }
             
             self.stopLoading()
-            self.navigationController?.pushViewController(MainView(), animated: true)
+            let hosting = UIHostingController(rootView: MainView())
+            self.navigationController?.pushViewController( hosting, animated: true)
         })
     }
     

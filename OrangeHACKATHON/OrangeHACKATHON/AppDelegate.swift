@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseCore
+import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        let hosting = UIHostingController(rootView: MainView())
+        window?.rootViewController = UINavigationController(rootViewController: hosting)
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
