@@ -73,24 +73,62 @@ class SignIn: UIViewController, btnDelegate{
         
         btnSignIn.addTarget(self, action: #selector(checkSignIn), for: .touchUpInside)
         
+        
     }
     
     @objc func checkSignIn(){
+        startLoading()
         guard let email = email.text, !email.isEmpty,
               let password = password.text, !password.isEmpty else{
+                stopLoading()
             return
         }
         
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password,completion:{ result, error in
+            
             guard error == nil else{
-                
+                self.stopLoading()
                 self.presentError()
                 return
             }
             
+            self.stopLoading()
             self.navigationController?.pushViewController(MainView(), animated: true)
         })
     }
+    
+    let indicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        
+        indicator.hidesWhenStopped = true
+        indicator.style = UIActivityIndicatorView.Style.large
+        indicator.startAnimating()
+        return indicator
+    }()
+    
+    lazy var loadAuth:UIAlertController = {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        alert.view.addSubview(indicator)
+        alert.view.snp.makeConstraints { make in
+            make.width.equalTo(100)
+            make.height.equalTo(100)
+        }
+        
+        return alert
+    }()
+    
+    func startLoading(){
+        present(loadAuth, animated: true)
+        indicator.startAnimating()
+    }
+    
+    func stopLoading(){
+        loadAuth.dismiss(animated: true)
+        indicator.stopAnimating()
+    }
+
+
+
     
     private func presentError(){
         let error = ErrorForReg()

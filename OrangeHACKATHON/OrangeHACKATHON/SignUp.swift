@@ -82,6 +82,8 @@ class SignUp: UIViewController {
     }
     
     @objc func signUp(){
+        startLoading()
+        
         guard let email = email.text, !email.isEmpty,
               let password = password.text, !password.isEmpty,
               let confPassword = confirmPassword.text, !confPassword.isEmpty,
@@ -92,17 +94,20 @@ class SignUp: UIViewController {
                   let confPassword = confirmPassword.text, !confPassword.isEmpty,
                   password != confPassword
             else{
+                stopLoading()
                 return
             }
             
+            stopLoading()
             errorDoesntMatchesPassword()
             return
         }
         
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [self]result, error in
             guard error == nil else{
-                
-                if(!email.contains("@")){
+                stopLoading()
+
+                if(!email.contains("@") && (!email.contains(".ru") || !email.contains(".com"))){
                     self.errorEmailDoesntComplyPrinciples()
                 }else if(!isPasswordValid(password)){
                     self.errorPasswordDoesntComplyPrinciples()
@@ -111,9 +116,42 @@ class SignUp: UIViewController {
                 return
             }
             
-            print("Acc creation")
+            stopLoading()
+
+            
         })
     }
+    
+    private let indicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        
+        indicator.hidesWhenStopped = true
+        indicator.style = UIActivityIndicatorView.Style.large
+        indicator.startAnimating()
+        return indicator
+    }()
+    
+    private lazy var loadAuth:UIAlertController = {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        alert.view.addSubview(indicator)
+        alert.view.snp.makeConstraints { make in
+            make.width.equalTo(100)
+            make.height.equalTo(100)
+        }
+        
+        return alert
+    }()
+    
+    private func startLoading(){
+        present(loadAuth, animated: true)
+        indicator.startAnimating()
+    }
+    
+    private func stopLoading(){
+        loadAuth.dismiss(animated: true)
+        indicator.stopAnimating()
+    }
+
     
     private func isPasswordValid(_ password: String) -> Bool {
         var containsCapitalLetter = false
@@ -136,7 +174,7 @@ class SignUp: UIViewController {
     
     
     private func errorEmailDoesntComplyPrinciples(){
-        ntf = pushNotification("The email must contains \"@\"")
+        ntf = pushNotification("The email must contains \"@, .ru, .com\"")
     }
 
     private func errorDoesntMatchesPassword(){
