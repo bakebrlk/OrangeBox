@@ -8,45 +8,76 @@ import SwiftUI
 
 enum Tab {
     case market
-    case card
+    case cart
     case ai
     case profile
 }
 
 struct MainView: View {
     
-  //  @State private var tabItem: Tab = .market
+    @State private var tabItem: Tab = .market
     
     var body: some View {
         setUI()
     }
     
     private func setUI() -> some View{
-        setTabItems()
+        
+        VStack{
+            if(tabItem == .market){
+                MarketView()
+                
+            }else if(tabItem == .cart){
+                CardView()
+            }
+            
+            Spacer()
+            setTabItems()
+        }
     }
     
+    
     private func setTabItems() -> some View {
-        
-        TabView {
-            CardView()
-                .tabItem {
-                    cardTab
-                }
+
+        HStack{
+            Spacer()
             
-            MarketView()
-                .tabItem {
-                    marketTab
-                }
+            getItem(text: "Market", image: Image(systemName: "house"), item: .market)
             
+            Spacer()
+            getItem(text: "Cart", image: Image(systemName: "cart"), item: .cart)
+            
+            Spacer()
         }
-        .background(Color.mint)
+        .background(Color.green)
+    }
+    
+    private func getItem(text: String, image: Image, item: Tab) -> some View{
+        
+        Button(action: {
+            tabItem = item
+        }, label: {
+            VStack{
+                image
+                    .foregroundColor(tabItem == item ? Color.orange : Color.gray)
+                
+                Text(text)
+                    .foregroundColor(tabItem == item ? Color.orange : Color.gray)
+            }
+            .padding(.top)
+        })
+ 
+        
     }
     
     private var marketTab: some View {
         Text("Market")
+            .padding()
+            .background(Color.red)
+            .padding()
     }
     
-    private var cardTab: some View {
+    private var cartTab: some View {
        Text("Card")
     }
 }
