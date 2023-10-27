@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B3703132AEBD42C00D58E9F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3703122AEBD42C00D58E9F /* Lottie */; };
 		8B52F9E62AB20B0C009F34E8 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F9E52AB20B0C009F34E8 /* SignIn.swift */; };
 		8B5AC0FC2AE1365F002DBC4E /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5AC0FB2AE1365F002DBC4E /* MarketView.swift */; };
 		8B5AC0FE2AE13688002DBC4E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5AC0FD2AE13688002DBC4E /* CardView.swift */; };
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3703132AEBD42C00D58E9F /* Lottie in Frameworks */,
 				8B881D362AB46FFB00515ECD /* FirebaseAnalytics in Frameworks */,
 				8B881D382AB46FFB00515ECD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				8BE954EE2AB1C69700E06736 /* SnapKit in Frameworks */,
@@ -117,6 +119,7 @@
 				8B881D352AB46FFB00515ECD /* FirebaseAnalytics */,
 				8B881D372AB46FFB00515ECD /* FirebaseAnalyticsWithoutAdIdSupport */,
 				8B881D392AB46FFB00515ECD /* FirebaseAuth */,
+				8B3703122AEBD42C00D58E9F /* Lottie */,
 			);
 			productName = OrangeHACKATHON;
 			productReference = 8BE954D52AB1B82000E06736 /* Culinary Oasis.app */;
@@ -149,6 +152,7 @@
 			packageReferences = (
 				8BE954EC2AB1C69700E06736 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				8B881D342AB46FFB00515ECD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8B3703112AEBD42C00D58E9F /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 8BE954D62AB1B82000E06736 /* Products */;
 			projectDirPath = "";
@@ -404,6 +408,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8B3703112AEBD42C00D58E9F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
 		8B881D342AB46FFB00515ECD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -423,6 +435,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8B3703122AEBD42C00D58E9F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B3703112AEBD42C00D58E9F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		8B881D352AB46FFB00515ECD /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8B881D342AB46FFB00515ECD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
