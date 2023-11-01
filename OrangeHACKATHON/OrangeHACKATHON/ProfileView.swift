@@ -31,7 +31,8 @@ struct ProfileView: View {
     @State private var address: String = "Алматы, Жунисова 4/6 1 под, 36кв"
     @State private var titleForOption = ""
     @State private var descriptionForOption = ""
-    
+    @State private var isImagePickerPresented = false
+    @State private var selectedImage: UIImage?
     
     var body: some View {
         
@@ -132,13 +133,28 @@ struct ProfileView: View {
     }()
     
     private var profileImage: some View {
-        
-        avatar
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 150, height: 150)
-            .foregroundStyle(Color.blue)
-            .padding()
+        Button {
+            isImagePickerPresented.toggle()
+        } label: {
+            if let image = selectedImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .clipShape(Circle())
+                    .padding()
+            }else{
+                avatar
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 150, height: 150)
+                    .foregroundStyle(Color.blue)
+                    .padding()
+            }
+            
+        }
+        .sheet(isPresented: $isImagePickerPresented) {
+                        ImagePicker(selectedImage: $selectedImage)
+                    }
         
     }
     

@@ -18,6 +18,7 @@
 		8B881D3A2AB46FFB00515ECD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D392AB46FFB00515ECD /* FirebaseAuth */; };
 		8B881D3C2AB471C400515ECD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B881D3B2AB471C400515ECD /* MainView.swift */; };
 		8B881D3E2AB475BF00515ECD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */; };
+		8BBED36D2AF314B100F9848B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBED36C2AF314B100F9848B /* ImagePicker.swift */; };
 		8BC9C6272ABA2D3200774B82 /* ErrorForReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C6262ABA2D3200774B82 /* ErrorForReg.swift */; };
 		8BE954D92AB1B82000E06736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE954D82AB1B82000E06736 /* AppDelegate.swift */; };
 		8BE954DB2AB1B82000E06736 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE954DA2AB1B82000E06736 /* SceneDelegate.swift */; };
@@ -36,6 +37,7 @@
 		8B5FDD602AEA117E0037F3F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8B881D3B2AB471C400515ECD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8BBED36C2AF314B100F9848B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8BC9C6262ABA2D3200774B82 /* ErrorForReg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorForReg.swift; sourceTree = "<group>"; };
 		8BE954D52AB1B82000E06736 /* Culinary Oasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Culinary Oasis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE954D82AB1B82000E06736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				8B5AC0FD2AE13688002DBC4E /* CardView.swift */,
 				8B5FDD602AEA117E0037F3F8 /* ProfileView.swift */,
 				8B441D322AF141A1003ACED9 /* DataOptionView.swift */,
+				8BBED36C2AF314B100F9848B /* ImagePicker.swift */,
 				8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */,
 				8BE954E12AB1B82100E06736 /* Assets.xcassets */,
 				8BE954E32AB1B82100E06736 /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				8BE954F02AB1FAEF00E06736 /* SignUp.swift in Sources */,
 				8B52F9E62AB20B0C009F34E8 /* SignIn.swift in Sources */,
 				8BE954D92AB1B82000E06736 /* AppDelegate.swift in Sources */,
+				8BBED36D2AF314B100F9848B /* ImagePicker.swift in Sources */,
 				8BC9C6272ABA2D3200774B82 /* ErrorForReg.swift in Sources */,
 				8BE954DB2AB1B82000E06736 /* SceneDelegate.swift in Sources */,
 			);
