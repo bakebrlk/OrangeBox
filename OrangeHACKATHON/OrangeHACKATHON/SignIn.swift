@@ -191,7 +191,7 @@ class SignIn: UIViewController, btnDelegate{
     }()
     
     private func textField(text: String) -> UITextField{
-        let tx = TextField()
+        let tx = UTextField()
         tx.placeholder = text
         tx.backgroundColor = .white
         return tx

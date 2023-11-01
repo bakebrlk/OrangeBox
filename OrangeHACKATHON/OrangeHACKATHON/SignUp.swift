@@ -289,7 +289,7 @@ class SignUp: UIViewController {
     }()
     
     private func textField(text: String) -> UITextField{
-        let tx = TextField()
+        let tx = UTextField()
         tx.placeholder = text
         tx.backgroundColor = .white
         return tx
@@ -297,13 +297,13 @@ class SignUp: UIViewController {
 }
 
 func textField(text: String) -> UITextField{
-    let tx = TextField()
+    let tx = UTextField()
     tx.placeholder = text
     tx.backgroundColor = .white
     return tx
 }
 
-class TextField: UITextField {
+class UTextField: UITextField {
 
     let padding = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 5)
 

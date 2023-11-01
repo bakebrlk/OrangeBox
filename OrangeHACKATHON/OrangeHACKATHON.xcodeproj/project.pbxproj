@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B3703132AEBD42C00D58E9F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3703122AEBD42C00D58E9F /* Lottie */; };
+		8B441D332AF141A1003ACED9 /* DataOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B441D322AF141A1003ACED9 /* DataOptionView.swift */; };
 		8B52F9E62AB20B0C009F34E8 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F9E52AB20B0C009F34E8 /* SignIn.swift */; };
 		8B5AC0FC2AE1365F002DBC4E /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5AC0FB2AE1365F002DBC4E /* MarketView.swift */; };
 		8B5AC0FE2AE13688002DBC4E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5AC0FD2AE13688002DBC4E /* CardView.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B441D322AF141A1003ACED9 /* DataOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOptionView.swift; sourceTree = "<group>"; };
 		8B52F9E52AB20B0C009F34E8 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		8B5AC0FB2AE1365F002DBC4E /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 		8B5AC0FD2AE13688002DBC4E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				8B5AC0FB2AE1365F002DBC4E /* MarketView.swift */,
 				8B5AC0FD2AE13688002DBC4E /* CardView.swift */,
 				8B5FDD602AEA117E0037F3F8 /* ProfileView.swift */,
+				8B441D322AF141A1003ACED9 /* DataOptionView.swift */,
 				8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */,
 				8BE954E12AB1B82100E06736 /* Assets.xcassets */,
 				8BE954E32AB1B82100E06736 /* LaunchScreen.storyboard */,
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BE954DD2AB1B82000E06736 /* ViewController.swift in Sources */,
+				8B441D332AF141A1003ACED9 /* DataOptionView.swift in Sources */,
 				8B5AC0FE2AE13688002DBC4E /* CardView.swift in Sources */,
 				8B5FDD612AEA117E0037F3F8 /* ProfileView.swift in Sources */,
 				8B881D3C2AB471C400515ECD /* MainView.swift in Sources */,
