@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        let hosting = UIHostingController(rootView: MainView())
+        let hosting = UIHostingController(rootView: ProfileView())
         window?.rootViewController = UINavigationController(rootViewController: hosting)
         // Override point for customization after application launch.
         

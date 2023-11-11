@@ -33,24 +33,41 @@ struct ProfileView: View {
     @State private var descriptionForOption = ""
     @State private var isImagePickerPresented = false
     @State private var selectedImage: UIImage?
+    @State private var cartData: [String] = ["visa"]
     
     var body: some View {
         
-        VStack{
+        NavigationView {
+            VStack{
                 
-            title
-            
-            profileImage
-            
-            
-            fullNameView
-                    
-            posts
-            
-            Spacer()
+                ZStack{
+                    Image("profileBackground")
+                        .resizable()
+                        .padding()
+                    profileImage
+                        
+                }
+                
+                fullNameView
+                
+                posts
+                
+                Spacer()
+                
+                bottomLogo
+            }
+            .navigationBarTitle("Profile", displayMode: .inline)
+            .padding(.top)
         }
+       
     
     }
+    
+    private var bottomLogo: some View = {
+        Image("market")
+            .resizable()
+            .frame(width: 200, height: 200)
+    }()
     
     private var fullNameView: some View {
         description(text: fullName)
@@ -69,10 +86,10 @@ struct ProfileView: View {
     
     private var posts: some View {
         VStack{
-            post(title: "Телефон", description: phone, profileData: .phone)
-            post(title: "E-mail", description: email, profileData: .email)
-            post(title: "карта", description: "visa", profileData: .cart)
-            post(title: "адрес", description: address, profileData: .address)
+            post(title: "Телефон", description: $phone, profileData: .phone)
+            post(title: "E-mail", description: $email, profileData: .email)
+            post(title: "карта", description: $cartData[0], profileData: .cart)
+            post(title: "адрес", description: $address, profileData: .address)
             
         }
         .background(Color.gray.opacity(0.2))
@@ -80,13 +97,14 @@ struct ProfileView: View {
         .padding()
     }
     
-    private func post(title: String, description: String, profileData: ProfileData) -> Button<some View>{
+    private func post(title: String, description: Binding<String>, profileData: ProfileData) -> Button<some View>{
         
         Button(action: {
+            
             optionsDetails = profileData
+            print(description.wrappedValue)
             shareSheet.toggle()
             titleForOption = title
-            descriptionForOption = description
             
         }, label: {
             HStack{
@@ -98,11 +116,11 @@ struct ProfileView: View {
                     cart.padding()
                     
                 }else{
-                    self.description(text: description)
+                    self.description(text: description.wrappedValue)
                 }
             }
             .sheet(isPresented: $shareSheet, content: {
-                DataOptionView(optionDetails: $optionsDetails, description: $descriptionForOption, title: $titleForOption, shareSheet: $shareSheet)
+                DataOptionView(optionDetails: $optionsDetails, description: description, title: $titleForOption, shareSheet: $shareSheet)
                     .presentationDetents([.medium])
             })
             
@@ -124,13 +142,6 @@ struct ProfileView: View {
             .foregroundStyle(Color.black)
             .padding()
     }
-    
-    private var title: some View = {
-        Text("Profile")
-            .bold()
-            .fontWidth(.condensed)
-            .padding()
-    }()
     
     private var profileImage: some View {
         Button {

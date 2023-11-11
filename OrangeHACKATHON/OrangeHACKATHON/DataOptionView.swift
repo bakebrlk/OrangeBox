@@ -30,7 +30,7 @@ struct DataOptionView: View {
     
     private var TextField: some View  {
         
-        SwiftUI.TextField(text: $textField) {
+        SwiftUI.TextField(text: $description) {
             VStack(alignment: .leading){
                 Text(description)
             }
