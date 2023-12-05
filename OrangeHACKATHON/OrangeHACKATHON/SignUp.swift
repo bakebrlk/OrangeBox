@@ -23,18 +23,40 @@ class SignUp: UIViewController {
         navigationItem.title = "New User"
         self.navigationItem.setHidesBackButton(true, animated: true)
         
-        view.addSubview(password)
         
-        password.snp.makeConstraints { make in
+        
+        
+        view.addSubview(surename)
+        surename.snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.leading.equalToSuperview().inset(16)
+            make.leading.equalToSuperview().offset(16)
+            make.trailing.equalToSuperview().offset(-16)
+            make.height.equalTo(50)
+        }
+        
+        view.addSubview(name)
+        name.snp.makeConstraints { make in
+            make.bottom.equalTo(surename.snp.top).offset(-16)
+            make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().offset(-16)
             make.height.equalTo(50)
         }
         
         view.addSubview(email)
         email.snp.makeConstraints { make in
-            make.bottom.equalTo(password.snp.top).offset(-16)
+            make.top.equalTo(surename.snp.bottom).offset(16)
+            make.leading.equalToSuperview().inset(16)
+            make.trailing.equalToSuperview().offset(-16)
+            make.height.equalTo(50)
+        }
+        
+       
+        
+       
+       
+        view.addSubview(password)
+        password.snp.makeConstraints { make in
+            make.top.equalTo(email.snp.bottom).offset(16)
             make.leading.equalToSuperview().inset(16)
             make.trailing.equalToSuperview().offset(-16)
             make.height.equalTo(50)
@@ -52,7 +74,7 @@ class SignUp: UIViewController {
         
         logo.snp.makeConstraints { make in
             make.width.height.equalTo(150)
-            make.bottom.equalTo(email.snp.top).offset(-16)
+            make.bottom.equalTo(name.snp.top).offset(-16)
             make.centerX.equalToSuperview()
         }
         
@@ -268,39 +290,24 @@ class SignUp: UIViewController {
         return img
     }()
     
-    private lazy var email: UITextField = {
-        let tx = textField(text: "Email")
-        tx.layer.cornerRadius = 16
-        return tx
-    }()
+    private lazy var name = textField(text: "First Name", isSecure: false)
     
-    private lazy var password: UITextField = {
-        let tx = textField(text: "Password")
-        tx.isSecureTextEntry = true
-        tx.layer.cornerRadius = 16
-        return tx
-    }()
+    private lazy var surename = textField(text: "Last Name", isSecure: false)
     
-    private lazy var confirmPassword: UITextField = {
-        let tx = textField(text: "Confirm Password")
-        tx.isSecureTextEntry = true
-        tx.layer.cornerRadius = 16
-        return tx
-    }()
+    private lazy var email = textField(text: "Email", isSecure: false)
     
-    private func textField(text: String) -> UITextField{
+    private lazy var password = textField(text: "Password", isSecure: true)
+    
+    private lazy var confirmPassword = textField(text: "Confirm Password", isSecure: true)
+    
+    private func textField(text: String, isSecure: Bool) -> UITextField{
         let tx = UTextField()
         tx.placeholder = text
         tx.backgroundColor = .white
+        tx.layer.cornerRadius = 16
+        tx.isSecureTextEntry = isSecure
         return tx
     }
-}
-
-func textField(text: String) -> UITextField{
-    let tx = UTextField()
-    tx.placeholder = text
-    tx.backgroundColor = .white
-    return tx
 }
 
 class UTextField: UITextField {

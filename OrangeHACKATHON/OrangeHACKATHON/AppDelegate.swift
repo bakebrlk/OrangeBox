@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }else if(!StorageUserDefaultModal.checkLogin){
             StorageUserDefaultModal.checkOnbording = true
-            window?.rootViewController = UINavigationController(rootViewController: ViewController())
+            window?.rootViewController = UINavigationController(rootViewController: RegistrationForms(variant: .email, information: "bekzat@gmail.com", name: "Bekzat"))
         }else{
             let hosting = UIHostingController(rootView: ProfileView())
             window?.rootViewController = UINavigationController(rootViewController: hosting)
