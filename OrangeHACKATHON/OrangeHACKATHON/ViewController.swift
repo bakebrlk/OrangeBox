@@ -12,10 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        StorageUserDefaultModal.checkLogin = false
         setUI()
     }
-
    
     private func setUI(){
         

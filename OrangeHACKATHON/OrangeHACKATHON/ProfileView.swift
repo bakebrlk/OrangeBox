@@ -44,10 +44,11 @@ struct ProfileView: View {
                     Image("profileBackground")
                         .resizable()
                         .padding()
+                        
                     profileImage
                         
                 }
-                
+        
                 fullNameView
                 
                 posts
@@ -58,6 +59,7 @@ struct ProfileView: View {
             }
             .navigationBarTitle("Profile", displayMode: .inline)
             .padding(.top)
+
         }
        
     
@@ -158,7 +160,7 @@ struct ProfileView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 150, height: 150)
-                    .foregroundStyle(Color.blue)
+                    .foregroundStyle(Color.black)
                     .padding()
             }
             

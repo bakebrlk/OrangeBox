@@ -18,10 +18,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        let hosting = UIHostingController(rootView: MainView())
-        window?.rootViewController = UINavigationController(rootViewController: hosting)
-        // Override point for customization after application launch.
         
+        if(!StorageUserDefaultModal.checkOnbording){
+            StorageUserDefaultModal.checkOnbording = true
+            let hosting = UIHostingController(rootView: OnBordingView())
+            window?.rootViewController = UINavigationController(rootViewController: hosting)
+            
+        }else if(!StorageUserDefaultModal.checkLogin){
+            StorageUserDefaultModal.checkOnbording = true
+            window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        }else{
+            let hosting = UIHostingController(rootView: ProfileView())
+            window?.rootViewController = UINavigationController(rootViewController: hosting)
+            
+        }
+
         FirebaseApp.configure()
         
         return true
