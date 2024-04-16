@@ -31,6 +31,7 @@
 		8BE954E52AB1B82100E06736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE954E32AB1B82100E06736 /* LaunchScreen.storyboard */; };
 		8BE954EE2AB1C69700E06736 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8BE954ED2AB1C69700E06736 /* SnapKit */; };
 		8BE954F02AB1FAEF00E06736 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE954EF2AB1FAEF00E06736 /* SignUp.swift */; };
+		91C258F82BCF076D00EE3A02 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C258F72BCF076D00EE3A02 /* TestFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		8BE954E42AB1B82100E06736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BE954E62AB1B82100E06736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BE954EF2AB1FAEF00E06736 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		91C258F72BCF076D00EE3A02 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				8BE954E12AB1B82100E06736 /* Assets.xcassets */,
 				8BE954E32AB1B82100E06736 /* LaunchScreen.storyboard */,
 				8BE954E62AB1B82100E06736 /* Info.plist */,
+				91C258F72BCF076D00EE3A02 /* TestFile.swift */,
 			);
 			path = OrangeHACKATHON;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				8B28193C2B1B55F000C536CA /* RegistrationForms.swift in Sources */,
 				8BE954DD2AB1B82000E06736 /* ViewController.swift in Sources */,
 				8B441D332AF141A1003ACED9 /* DataOptionView.swift in Sources */,
+				91C258F82BCF076D00EE3A02 /* TestFile.swift in Sources */,
 				8BBED36F2AF3770000F9848B /* OnBordingView.swift in Sources */,
 				8B5FDD612AEA117E0037F3F8 /* ProfileView.swift in Sources */,
 				8B04C2002B1E350900C7AEEC /* HostingSwiftUItoUIkitController.swift in Sources */,
