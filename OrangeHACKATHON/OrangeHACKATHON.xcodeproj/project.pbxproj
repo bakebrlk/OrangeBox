@@ -54,6 +54,10 @@
 		91C259452BCF09E500EE3A02 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259392BCF09E500EE3A02 /* Train.swift */; };
 		91C259462BCF09E500EE3A02 /* training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2593A2BCF09E500EE3A02 /* training.swift */; };
 		91C259472BCF09E500EE3A02 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2593B2BCF09E500EE3A02 /* UserLocation.swift */; };
+		91C2594D2BCF0A2900EE3A02 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259482BCF0A2900EE3A02 /* ImagePicker.swift */; };
+		91C2594E2BCF0A2900EE3A02 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259492BCF0A2900EE3A02 /* ItemDetailView.swift */; };
+		91C2594F2BCF0A2900EE3A02 /* LikedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2594A2BCF0A2900EE3A02 /* LikedItemView.swift */; };
+		91C259502BCF0A2900EE3A02 /* StorageUserDefaultModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2594B2BCF0A2900EE3A02 /* StorageUserDefaultModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +105,10 @@
 		91C259392BCF09E500EE3A02 /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		91C2593A2BCF09E500EE3A02 /* training.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = training.swift; sourceTree = "<group>"; };
 		91C2593B2BCF09E500EE3A02 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		91C259482BCF0A2900EE3A02 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		91C259492BCF0A2900EE3A02 /* ItemDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		91C2594A2BCF0A2900EE3A02 /* LikedItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedItemView.swift; sourceTree = "<group>"; };
+		91C2594B2BCF0A2900EE3A02 /* StorageUserDefaultModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageUserDefaultModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,7 @@
 				8B5FDD602AEA117E0037F3F8 /* ProfileView.swift */,
 				8B441D322AF141A1003ACED9 /* DataOptionView.swift */,
 				8BBED36C2AF314B100F9848B /* ImagePicker.swift */,
+				91C2594C2BCF0A2900EE3A02 /* viewModel */,
 				91C2593C2BCF09E500EE3A02 /* model */,
 				91C259092BCF080300EE3A02 /* view */,
 				8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */,
@@ -207,6 +216,17 @@
 				91C2593B2BCF09E500EE3A02 /* UserLocation.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		91C2594C2BCF0A2900EE3A02 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91C259482BCF0A2900EE3A02 /* ImagePicker.swift */,
+				91C259492BCF0A2900EE3A02 /* ItemDetailView.swift */,
+				91C2594A2BCF0A2900EE3A02 /* LikedItemView.swift */,
+				91C2594B2BCF0A2900EE3A02 /* StorageUserDefaultModal.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +321,14 @@
 				91C259172BCF080300EE3A02 /* SpecialDealView.swift in Sources */,
 				91C259142BCF080300EE3A02 /* RegistrationForms.swift in Sources */,
 				91C259402BCF09E500EE3A02 /* CustomIndic.swift in Sources */,
+				91C259502BCF0A2900EE3A02 /* StorageUserDefaultModal.swift in Sources */,
 				8BBED36F2AF3770000F9848B /* OnBordingView.swift in Sources */,
 				91C259472BCF09E500EE3A02 /* UserLocation.swift in Sources */,
+				91C2594D2BCF0A2900EE3A02 /* ImagePicker.swift in Sources */,
 				91C259182BCF080300EE3A02 /* UserProfileView.swift in Sources */,
+				91C2594E2BCF0A2900EE3A02 /* ItemDetailView.swift in Sources */,
 				8B5FDD612AEA117E0037F3F8 /* ProfileView.swift in Sources */,
+				91C2594F2BCF0A2900EE3A02 /* LikedItemView.swift in Sources */,
 				91C259152BCF080300EE3A02 /* SignIn.swift in Sources */,
 				91C259112BCF080300EE3A02 /* OnBordingView.swift in Sources */,
 				8B04C2002B1E350900C7AEEC /* HostingSwiftUItoUIkitController.swift in Sources */,
