@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		8B04C2002B1E350900C7AEEC /* HostingSwiftUItoUIkitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B04C1FF2B1E350900C7AEEC /* HostingSwiftUItoUIkitController.swift */; };
 		8B04C2022B1E49E700C7AEEC /* StorageUserDefaultModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B04C2012B1E49E700C7AEEC /* StorageUserDefaultModal.swift */; };
-		8B23B1A92AF3BD0800A6F803 /* onBording1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B23B1A82AF3BD0800A6F803 /* onBording1.json */; };
 		8B28193C2B1B55F000C536CA /* RegistrationForms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28193B2B1B55F000C536CA /* RegistrationForms.swift */; };
-		8B28A6EB2B02C6000082CDB1 /* onBording2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B28A6EA2B02C6000082CDB1 /* onBording2.json */; };
-		8B28A6ED2B02C6830082CDB1 /* onBording3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B28A6EC2B02C6830082CDB1 /* onBording3.json */; };
 		8B3703132AEBD42C00D58E9F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3703122AEBD42C00D58E9F /* Lottie */; };
 		8B441D332AF141A1003ACED9 /* DataOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B441D322AF141A1003ACED9 /* DataOptionView.swift */; };
 		8B52F9E62AB20B0C009F34E8 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F9E52AB20B0C009F34E8 /* SignIn.swift */; };
 		8B5FDD612AEA117E0037F3F8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FDD602AEA117E0037F3F8 /* ProfileView.swift */; };
+		8B7FFFBC2BCEFBA7002FEDAB /* onBording1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B7FFFB82BCEFBA7002FEDAB /* onBording1.json */; };
+		8B7FFFBD2BCEFBA7002FEDAB /* onBording2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B7FFFB92BCEFBA7002FEDAB /* onBording2.json */; };
+		8B7FFFBE2BCEFBA7002FEDAB /* onBording3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B7FFFBA2BCEFBA7002FEDAB /* onBording3.json */; };
 		8B881D362AB46FFB00515ECD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D352AB46FFB00515ECD /* FirebaseAnalytics */; };
 		8B881D382AB46FFB00515ECD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D372AB46FFB00515ECD /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		8B881D3A2AB46FFB00515ECD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D392AB46FFB00515ECD /* FirebaseAuth */; };
@@ -36,13 +36,13 @@
 /* Begin PBXFileReference section */
 		8B04C1FF2B1E350900C7AEEC /* HostingSwiftUItoUIkitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingSwiftUItoUIkitController.swift; sourceTree = "<group>"; };
 		8B04C2012B1E49E700C7AEEC /* StorageUserDefaultModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUserDefaultModal.swift; sourceTree = "<group>"; };
-		8B23B1A82AF3BD0800A6F803 /* onBording1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = onBording1.json; path = ../../../../../Downloads/onBording1.json; sourceTree = "<group>"; };
 		8B28193B2B1B55F000C536CA /* RegistrationForms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationForms.swift; sourceTree = "<group>"; };
-		8B28A6EA2B02C6000082CDB1 /* onBording2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = onBording2.json; path = ../../../../../Downloads/onBording2.json; sourceTree = "<group>"; };
-		8B28A6EC2B02C6830082CDB1 /* onBording3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = onBording3.json; path = ../../../../../Downloads/onBording3.json; sourceTree = "<group>"; };
 		8B441D322AF141A1003ACED9 /* DataOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOptionView.swift; sourceTree = "<group>"; };
 		8B52F9E52AB20B0C009F34E8 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		8B5FDD602AEA117E0037F3F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8B7FFFB82BCEFBA7002FEDAB /* onBording1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onBording1.json; sourceTree = "<group>"; };
+		8B7FFFB92BCEFBA7002FEDAB /* onBording2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onBording2.json; sourceTree = "<group>"; };
+		8B7FFFBA2BCEFBA7002FEDAB /* onBording3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onBording3.json; sourceTree = "<group>"; };
 		8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8BBED36C2AF314B100F9848B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8BBED36E2AF3770000F9848B /* OnBordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBordingView.swift; sourceTree = "<group>"; };
@@ -73,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B7FFFBB2BCEFBA7002FEDAB /* source */ = {
+			isa = PBXGroup;
+			children = (
+				8B7FFFB82BCEFBA7002FEDAB /* onBording1.json */,
+				8B7FFFB92BCEFBA7002FEDAB /* onBording2.json */,
+				8B7FFFBA2BCEFBA7002FEDAB /* onBording3.json */,
+			);
+			path = source;
+			sourceTree = SOURCE_ROOT;
+		};
 		8BE954CC2AB1B82000E06736 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		8BE954D72AB1B82000E06736 /* OrangeHACKATHON */ = {
 			isa = PBXGroup;
 			children = (
+				8B7FFFBB2BCEFBA7002FEDAB /* source */,
 				8BE954D82AB1B82000E06736 /* AppDelegate.swift */,
 				8B04C2012B1E49E700C7AEEC /* StorageUserDefaultModal.swift */,
 				8BE954DA2AB1B82000E06736 /* SceneDelegate.swift */,
@@ -105,9 +116,6 @@
 				8B5FDD602AEA117E0037F3F8 /* ProfileView.swift */,
 				8B441D322AF141A1003ACED9 /* DataOptionView.swift */,
 				8BBED36C2AF314B100F9848B /* ImagePicker.swift */,
-				8B23B1A82AF3BD0800A6F803 /* onBording1.json */,
-				8B28A6EA2B02C6000082CDB1 /* onBording2.json */,
-				8B28A6EC2B02C6830082CDB1 /* onBording3.json */,
 				8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */,
 				8BE954E12AB1B82100E06736 /* Assets.xcassets */,
 				8BE954E32AB1B82100E06736 /* LaunchScreen.storyboard */,
@@ -186,11 +194,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B28A6ED2B02C6830082CDB1 /* onBording3.json in Resources */,
-				8B28A6EB2B02C6000082CDB1 /* onBording2.json in Resources */,
+				8B7FFFBE2BCEFBA7002FEDAB /* onBording3.json in Resources */,
 				8BE954E52AB1B82100E06736 /* LaunchScreen.storyboard in Resources */,
+				8B7FFFBD2BCEFBA7002FEDAB /* onBording2.json in Resources */,
+				8B7FFFBC2BCEFBA7002FEDAB /* onBording1.json in Resources */,
 				8BE954E22AB1B82100E06736 /* Assets.xcassets in Resources */,
-				8B23B1A92AF3BD0800A6F803 /* onBording1.json in Resources */,
 				8B881D3E2AB475BF00515ECD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
