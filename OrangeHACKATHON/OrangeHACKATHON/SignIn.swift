@@ -72,7 +72,7 @@ class SignIn: UIViewController, btnDelegate{
         }
         
         btnSignIn.addTarget(self, action: #selector(checkSignIn), for: .touchUpInside)
-        
+        print("hi")
         
     }
     
