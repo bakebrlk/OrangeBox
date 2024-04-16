@@ -44,6 +44,16 @@
 		91C259172BCF080300EE3A02 /* SpecialDealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259062BCF080300EE3A02 /* SpecialDealView.swift */; };
 		91C259182BCF080300EE3A02 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259072BCF080300EE3A02 /* UserProfileView.swift */; };
 		91C259192BCF080300EE3A02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259082BCF080300EE3A02 /* ViewController.swift */; };
+		91C2593D2BCF09E500EE3A02 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259312BCF09E500EE3A02 /* Carousel.swift */; };
+		91C2593E2BCF09E500EE3A02 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259322BCF09E500EE3A02 /* ChatViewModel.swift */; };
+		91C259402BCF09E500EE3A02 /* CustomIndic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259342BCF09E500EE3A02 /* CustomIndic.swift */; };
+		91C259412BCF09E500EE3A02 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259352BCF09E500EE3A02 /* Demo.swift */; };
+		91C259422BCF09E500EE3A02 /* example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259362BCF09E500EE3A02 /* example.swift */; };
+		91C259432BCF09E500EE3A02 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259372BCF09E500EE3A02 /* OpenAIService.swift */; };
+		91C259442BCF09E500EE3A02 /* ParticleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259382BCF09E500EE3A02 /* ParticleEffect.swift */; };
+		91C259452BCF09E500EE3A02 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259392BCF09E500EE3A02 /* Train.swift */; };
+		91C259462BCF09E500EE3A02 /* training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2593A2BCF09E500EE3A02 /* training.swift */; };
+		91C259472BCF09E500EE3A02 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2593B2BCF09E500EE3A02 /* UserLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +91,16 @@
 		91C259062BCF080300EE3A02 /* SpecialDealView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialDealView.swift; sourceTree = "<group>"; };
 		91C259072BCF080300EE3A02 /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		91C259082BCF080300EE3A02 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91C259312BCF09E500EE3A02 /* Carousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		91C259322BCF09E500EE3A02 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		91C259342BCF09E500EE3A02 /* CustomIndic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomIndic.swift; sourceTree = "<group>"; };
+		91C259352BCF09E500EE3A02 /* Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		91C259362BCF09E500EE3A02 /* example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = example.swift; sourceTree = "<group>"; };
+		91C259372BCF09E500EE3A02 /* OpenAIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		91C259382BCF09E500EE3A02 /* ParticleEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEffect.swift; sourceTree = "<group>"; };
+		91C259392BCF09E500EE3A02 /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		91C2593A2BCF09E500EE3A02 /* training.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = training.swift; sourceTree = "<group>"; };
+		91C2593B2BCF09E500EE3A02 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +159,7 @@
 				8B5FDD602AEA117E0037F3F8 /* ProfileView.swift */,
 				8B441D322AF141A1003ACED9 /* DataOptionView.swift */,
 				8BBED36C2AF314B100F9848B /* ImagePicker.swift */,
+				91C2593C2BCF09E500EE3A02 /* model */,
 				91C259092BCF080300EE3A02 /* view */,
 				8B881D3D2AB475BF00515ECD /* GoogleService-Info.plist */,
 				8BE954E12AB1B82100E06736 /* Assets.xcassets */,
@@ -169,6 +190,23 @@
 				91C259082BCF080300EE3A02 /* ViewController.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		91C2593C2BCF09E500EE3A02 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				91C259312BCF09E500EE3A02 /* Carousel.swift */,
+				91C259322BCF09E500EE3A02 /* ChatViewModel.swift */,
+				91C259342BCF09E500EE3A02 /* CustomIndic.swift */,
+				91C259352BCF09E500EE3A02 /* Demo.swift */,
+				91C259362BCF09E500EE3A02 /* example.swift */,
+				91C259372BCF09E500EE3A02 /* OpenAIService.swift */,
+				91C259382BCF09E500EE3A02 /* ParticleEffect.swift */,
+				91C259392BCF09E500EE3A02 /* Train.swift */,
+				91C2593A2BCF09E500EE3A02 /* training.swift */,
+				91C2593B2BCF09E500EE3A02 /* UserLocation.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,25 +300,35 @@
 				8B441D332AF141A1003ACED9 /* DataOptionView.swift in Sources */,
 				91C259172BCF080300EE3A02 /* SpecialDealView.swift in Sources */,
 				91C259142BCF080300EE3A02 /* RegistrationForms.swift in Sources */,
+				91C259402BCF09E500EE3A02 /* CustomIndic.swift in Sources */,
 				8BBED36F2AF3770000F9848B /* OnBordingView.swift in Sources */,
+				91C259472BCF09E500EE3A02 /* UserLocation.swift in Sources */,
 				91C259182BCF080300EE3A02 /* UserProfileView.swift in Sources */,
 				8B5FDD612AEA117E0037F3F8 /* ProfileView.swift in Sources */,
 				91C259152BCF080300EE3A02 /* SignIn.swift in Sources */,
 				91C259112BCF080300EE3A02 /* OnBordingView.swift in Sources */,
 				8B04C2002B1E350900C7AEEC /* HostingSwiftUItoUIkitController.swift in Sources */,
+				91C259412BCF09E500EE3A02 /* Demo.swift in Sources */,
 				91C259162BCF080300EE3A02 /* SignUp.swift in Sources */,
 				91C2590B2BCF080300EE3A02 /* ChatView.swift in Sources */,
+				91C259442BCF09E500EE3A02 /* ParticleEffect.swift in Sources */,
 				91C259122BCF080300EE3A02 /* PlaceOrderView.swift in Sources */,
+				91C259432BCF09E500EE3A02 /* OpenAIService.swift in Sources */,
 				91C259102BCF080300EE3A02 /* Main.swift in Sources */,
 				91C2590A2BCF080300EE3A02 /* CartView.swift in Sources */,
 				8BE954D92AB1B82000E06736 /* AppDelegate.swift in Sources */,
+				91C259422BCF09E500EE3A02 /* example.swift in Sources */,
+				91C259452BCF09E500EE3A02 /* Train.swift in Sources */,
 				91C259192BCF080300EE3A02 /* ViewController.swift in Sources */,
 				91C2590E2BCF080300EE3A02 /* ErrorForReg.swift in Sources */,
 				8BBED36D2AF314B100F9848B /* ImagePicker.swift in Sources */,
 				91C259132BCF080300EE3A02 /* ProfileView.swift in Sources */,
 				8BC9C6272ABA2D3200774B82 /* ErrorForReg.swift in Sources */,
+				91C2593E2BCF09E500EE3A02 /* ChatViewModel.swift in Sources */,
 				91C2590C2BCF080300EE3A02 /* DataOptionView.swift in Sources */,
 				91C2590D2BCF080300EE3A02 /* DebitCard.swift in Sources */,
+				91C2593D2BCF09E500EE3A02 /* Carousel.swift in Sources */,
+				91C259462BCF09E500EE3A02 /* training.swift in Sources */,
 				8B04C2022B1E49E700C7AEEC /* StorageUserDefaultModal.swift in Sources */,
 				8BE954DB2AB1B82000E06736 /* SceneDelegate.swift in Sources */,
 			);
