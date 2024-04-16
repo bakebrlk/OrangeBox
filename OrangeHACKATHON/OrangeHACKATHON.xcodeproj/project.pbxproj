@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B3703132AEBD42C00D58E9F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3703122AEBD42C00D58E9F /* Lottie */; };
-		8B7FFFBC2BCEFBA7002FEDAB /* onBording1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B7FFFB82BCEFBA7002FEDAB /* onBording1.json */; };
-		8B7FFFBD2BCEFBA7002FEDAB /* onBording2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B7FFFB92BCEFBA7002FEDAB /* onBording2.json */; };
-		8B7FFFBE2BCEFBA7002FEDAB /* onBording3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B7FFFBA2BCEFBA7002FEDAB /* onBording3.json */; };
 		8B881D362AB46FFB00515ECD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D352AB46FFB00515ECD /* FirebaseAnalytics */; };
 		8B881D382AB46FFB00515ECD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D372AB46FFB00515ECD /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		8B881D3A2AB46FFB00515ECD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8B881D392AB46FFB00515ECD /* FirebaseAuth */; };
@@ -61,20 +58,15 @@
 		91C2596D2BCF0AC800EE3A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259662BCF0AC800EE3A02 /* AppDelegate.swift */; };
 		91C2596E2BCF0AC800EE3A02 /* CategoryItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259672BCF0AC800EE3A02 /* CategoryItemsView.swift */; };
 		91C2596F2BCF0AC800EE3A02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C259682BCF0AC800EE3A02 /* GoogleService-Info.plist */; };
-		91C259702BCF0AC800EE3A02 /* GroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C259692BCF0AC800EE3A02 /* GroceriesApp.swift */; };
 		91C259712BCF0AC800EE3A02 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C2596A2BCF0AC800EE3A02 /* Info.plist */; };
 		91C259722BCF0AC800EE3A02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2596B2BCF0AC800EE3A02 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B7FFFB82BCEFBA7002FEDAB /* onBording1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onBording1.json; sourceTree = "<group>"; };
-		8B7FFFB92BCEFBA7002FEDAB /* onBording2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onBording2.json; sourceTree = "<group>"; };
-		8B7FFFBA2BCEFBA7002FEDAB /* onBording3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onBording3.json; sourceTree = "<group>"; };
 		8BBBD7A72BCF0FB100333C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BBBD7A92BCF102700333C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BE954D52AB1B82000E06736 /* Culinary Oasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Culinary Oasis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE954E42AB1B82100E06736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8BE954E62AB1B82100E06736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C258F92BCF080300EE3A02 /* CartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		91C258FA2BCF080300EE3A02 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		91C258FB2BCF080300EE3A02 /* DataOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataOptionView.swift; sourceTree = "<group>"; };
@@ -118,7 +110,6 @@
 		91C259662BCF0AC800EE3A02 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91C259672BCF0AC800EE3A02 /* CategoryItemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryItemsView.swift; sourceTree = "<group>"; };
 		91C259682BCF0AC800EE3A02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		91C259692BCF0AC800EE3A02 /* GroceriesApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceriesApp.swift; sourceTree = "<group>"; };
 		91C2596A2BCF0AC800EE3A02 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C2596B2BCF0AC800EE3A02 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,16 +130,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B7FFFBB2BCEFBA7002FEDAB /* source */ = {
-			isa = PBXGroup;
-			children = (
-				8B7FFFB82BCEFBA7002FEDAB /* onBording1.json */,
-				8B7FFFB92BCEFBA7002FEDAB /* onBording2.json */,
-				8B7FFFBA2BCEFBA7002FEDAB /* onBording3.json */,
-			);
-			path = source;
-			sourceTree = SOURCE_ROOT;
-		};
 		8BE954CC2AB1B82000E06736 = {
 			isa = PBXGroup;
 			children = (
@@ -169,13 +150,11 @@
 			isa = PBXGroup;
 			children = (
 				91C2596C2BCF0AC800EE3A02 /* main */,
-				8B7FFFBB2BCEFBA7002FEDAB /* source */,
 				91C2595B2BCF0A4C00EE3A02 /* source */,
 				91C2594C2BCF0A2900EE3A02 /* viewModel */,
 				91C2593C2BCF09E500EE3A02 /* model */,
 				91C259092BCF080300EE3A02 /* view */,
 				8BE954E32AB1B82100E06736 /* LaunchScreen.storyboard */,
-				8BE954E62AB1B82100E06736 /* Info.plist */,
 				8BBBD7A72BCF0FB100333C3D /* Assets.xcassets */,
 				8BBBD7A92BCF102700333C3D /* Assets.xcassets */,
 			);
@@ -185,6 +164,7 @@
 		91C259092BCF080300EE3A02 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				91C259672BCF0AC800EE3A02 /* CategoryItemsView.swift */,
 				91C258F92BCF080300EE3A02 /* CartView.swift */,
 				91C258FA2BCF080300EE3A02 /* ChatView.swift */,
 				91C258FB2BCF080300EE3A02 /* DataOptionView.swift */,
@@ -254,9 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				91C259662BCF0AC800EE3A02 /* AppDelegate.swift */,
-				91C259672BCF0AC800EE3A02 /* CategoryItemsView.swift */,
 				91C259682BCF0AC800EE3A02 /* GoogleService-Info.plist */,
-				91C259692BCF0AC800EE3A02 /* GroceriesApp.swift */,
 				91C2596A2BCF0AC800EE3A02 /* Info.plist */,
 				91C2596B2BCF0AC800EE3A02 /* SceneDelegate.swift */,
 			);
@@ -337,7 +315,6 @@
 				91C259652BCF0A4C00EE3A02 /* way.json in Resources */,
 				91C259712BCF0AC800EE3A02 /* Info.plist in Resources */,
 				8BBBD7AA2BCF102700333C3D /* Assets.xcassets in Resources */,
-				8B7FFFBE2BCEFBA7002FEDAB /* onBording3.json in Resources */,
 				8BE954E52AB1B82100E06736 /* LaunchScreen.storyboard in Resources */,
 				91C2595C2BCF0A4C00EE3A02 /* accepted.json in Resources */,
 				91C2595F2BCF0A4C00EE3A02 /* delivered.json in Resources */,
@@ -346,9 +323,7 @@
 				91C2595D2BCF0A4C00EE3A02 /* cart.json in Resources */,
 				91C259632BCF0A4C00EE3A02 /* onBording3.json in Resources */,
 				91C259642BCF0A4C00EE3A02 /* pending.json in Resources */,
-				8B7FFFBD2BCEFBA7002FEDAB /* onBording2.json in Resources */,
 				91C2596F2BCF0AC800EE3A02 /* GoogleService-Info.plist in Resources */,
-				8B7FFFBC2BCEFBA7002FEDAB /* onBording1.json in Resources */,
 				8BBBD7A82BCF0FB100333C3D /* Assets.xcassets in Resources */,
 				91C259622BCF0A4C00EE3A02 /* onBording2.json in Resources */,
 			);
@@ -366,7 +341,6 @@
 				91C259142BCF080300EE3A02 /* RegistrationForms.swift in Sources */,
 				91C259402BCF09E500EE3A02 /* CustomIndic.swift in Sources */,
 				91C259502BCF0A2900EE3A02 /* StorageUserDefaultModal.swift in Sources */,
-				91C259702BCF0AC800EE3A02 /* GroceriesApp.swift in Sources */,
 				91C259472BCF09E500EE3A02 /* UserLocation.swift in Sources */,
 				91C2594D2BCF0A2900EE3A02 /* ImagePicker.swift in Sources */,
 				91C259182BCF080300EE3A02 /* UserProfileView.swift in Sources */,
@@ -537,7 +511,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5PQY3V94J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OrangeHACKATHON/Info.plist;
+				INFOPLIST_FILE = OrangeHACKATHON/main/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Culinary Oasis";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -563,11 +537,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5PQY3V94J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OrangeHACKATHON/Info.plist;
+				INFOPLIST_FILE = OrangeHACKATHON/main/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Culinary Oasis";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -582,6 +557,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SDU.CulinaryOasis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
